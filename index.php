@@ -1,9 +1,9 @@
 <?php
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("consys");
-$dbpwd = getenv("consys2017!");
-$dbname = getenv("consys");
+$dbuser = getenv("MYSQL_USER");
+$dbpwd = getenv("MYSQL_PASSWORD");
+$dbname = getenv("MYSQL_DATABASE");
 
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($connection->connect_errno) {
